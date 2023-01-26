@@ -1,0 +1,39 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+&__menu {
+    display: flex;
+    padding-left: 0;
+    margin-right: 371px;
+}
+.nav__menu > .nav__list:not(:last-child) {
+    margin-right: 46px;
+}
+
+&__list {
+    height: 16px;
+}
+&__list--first {
+    width: 53px;
+}
+&__list--second {
+    width: 58px;
+}
+&__list--third {
+    width: 51px;
+}
+&__link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    text-decoration: none;
+    color: $main-color;
+}
+.nav__link:hover,
+.nav__link:focus,
+.nav__link:active {
+    color: $brand-color;
+}
