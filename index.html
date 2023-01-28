@@ -19,6 +19,7 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="./css/main.min.css" />
     </head>
     <body>
         <!--Section header-->
@@ -32,15 +33,15 @@
                     >
                     <!--Navigation-->
                     <ul class="nav__menu">
-                        <li class="nav__list nav__list--first">
+                        <li class="nav__list nav__active">
                             <a class="nav__link" href="index.html">Agencja</a>
                         </li>
-                        <li class="nav__list nav__list--second">
+                        <li class="nav__list">
                             <a class="nav__link" href="portfolio.html"
                                 >Portfolio</a
                             >
                         </li>
-                        <li class="nav__list nav__list--third">
+                        <li class="nav__list">
                             <a class="nav__link" href="Kontakt">Kontakt</a>
                         </li>
                     </ul>
@@ -83,24 +84,26 @@
         <!--Section main-->
         <main>
             <div class="container">
-                <div class="header-box">
+                <div class="main__box">
                     <h1>
                         EFEKTYWNE ROZWIĄZANIA<br />
                         DLA WASZEGO BIZNESU
                     </h1>
-                    <button data-modal-open class="first-button" type="button">
+                    <!--Modal-->
+                    <button data-modal-open class="main__button" type="button">
                         Zamów usługę
                     </button>
-                    <div class="backdrop is-hidden" data-modal>
-                        <div class="modal-window">
-                            <h2 class="modalFormHeader">
+                    <div class="backdrop is__hidden" data-modal>
+                        <div class="modal__window">
+                            <!--Form-->
+                            <h2 class="form__header">
                                 Zostaw swoje dane w formularzu poniżej
                             </h2>
-                            <form class="modalForm">
-                                <label class="form-items"
-                                    ><p class="input-describe">Imię</p>
-                                    <div class="input-container">
-                                        <svg class="modalIcon">
+                            <form class="form">
+                                <label class="form__label"
+                                    ><p class="form__data">Imię</p>
+                                    <div class="form__container">
+                                        <svg class="form__icon">
                                             <use
                                                 href="./images/icons.svg/icons1.svg#icon-person-black-18dp-1"
                                             ></use>
@@ -108,14 +111,14 @@
                                         <input
                                             type="text"
                                             name="userName"
-                                            class="modal-input"
+                                            class="form__input"
                                         />
                                     </div>
                                 </label>
-                                <label class="form-items"
-                                    ><p class="input-describe">Telefon</p>
-                                    <div class="input-container">
-                                        <svg class="modalIcon">
+                                <label class="form__label"
+                                    ><p class="form__data">Telefon</p>
+                                    <div class="form__container">
+                                        <svg class="form__icon">
                                             <use
                                                 href="./images/icons.svg/icons1.svg#icon-phone-black-18dp-1"
                                             ></use>
@@ -123,13 +126,13 @@
                                         <input
                                             type="tel"
                                             name="userTel"
-                                            class="modal-input"
+                                            class="form__input"
                                         /></div
                                 ></label>
-                                <label class="form-items"
-                                    ><p class="input-describe">Email</p>
-                                    <div class="input-container">
-                                        <svg class="modalIcon">
+                                <label class="form__label"
+                                    ><p class="form__data">Email</p>
+                                    <div class="form__container">
+                                        <svg class="form__icon">
                                             <use
                                                 href="./images/icons.svg/icons1.svg#icon-email-black-18dp-1"
                                             ></use>
@@ -137,24 +140,24 @@
                                         <input
                                             type="email"
                                             name="userEmail"
-                                            class="modal-input"
+                                            class="form__input"
                                         /></div
                                 ></label>
-                                <label class="form-items"
-                                    ><p class="input-describe">Komentarz</p>
-                                    <div class="input-container">
+                                <label class="form__label"
+                                    ><p class="form__data">Komentarz</p>
+                                    <div class="form__container">
                                         <textarea
                                             rows="8"
                                             name="comment"
-                                            class="modal-input2 message"
+                                            class="form__input2 message"
                                             placeholder="Wprowadź tekst"
                                         ></textarea>
                                     </div>
                                 </label>
 
-                                <div class="checkboxContainer">
+                                <div class="checkbox">
                                     <input
-                                        class="inputCheckbox"
+                                        class="checkbox__input"
                                         id="statute-accept"
                                         type="checkbox"
                                         name="statuteCheckbox"
@@ -162,131 +165,129 @@
                                     />
                                     <label
                                         for="statute-accept"
-                                        class="labelCheckbox"
+                                        class="checkbox__label"
                                     >
                                         Oświadczam iż akceptuję
-                                        <a href="" class="statute-link"
+                                        <a href="" class="checkbox__statute"
                                             >Regulamin</a
                                         >
                                         i
-                                        <a href="" class="statute-link"
+                                        <a href="" class="checkbox__statute"
                                             >Politykę Prywatności.</a
                                         >
                                     </label>
                                 </div>
-                                <button type="submit" class="modalBtnSend">
-                                    <span class="btnText">Wyślij</span>
+                                <button type="submit" class="form__btn">
+                                    <span class="form__btn-text">Wyślij</span>
                                 </button>
                             </form>
 
                             <button
                                 type="button"
-                                class="btn-close"
+                                class="modal__btn-close"
                                 data-modal-close
                             >
-                                <div class="cross">x</div>
+                                <div class="button__close-X">x</div>
                             </button>
                         </div>
                     </div>
                 </div>
-
-                <div class="container section-main">
-                    <ul class="list-item">
-                        <li class="item">
-                            <svg class="list-icon" width="270" height="120">
+                <!--Assets -->
+                <div class="container assets">
+                    <ul class="assets__list">
+                        <li class="assets__item">
+                            <svg class="assets__icon" width="270" height="120">
                                 <use
                                     href="./images/icons.svg/icons.svg#icon-Group-1"
                                 ></use>
                             </svg>
-                            <h3 class="header-primary">LOREM IPSUM</h3>
+                            <h3 class="assets__header">LOREM IPSUM</h3>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Nam vel arcu sem. Sed non sodales dui.
                             Interdum et malesuada
                         </li>
-                        <li class="item">
+                        <li class="assets__item">
                             <svg class="list-icon" width="270" height="120">
                                 <use
                                     href="./images/icons.svg/icons.svg#icon-Group-2"
                                 ></use>
                             </svg>
-                            <h3 class="header-primary">LOREM IPSUM</h3>
+                            <h3 class="assets__header">LOREM IPSUM</h3>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Nam vel arcu sem. Sed non sodales dui.
                             Interdum et malesuada
                         </li>
-                        <li class="item">
+                        <li class="assets__item">
                             <svg class="list-icon" width="270" height="120">
                                 <use
                                     href="./images/icons.svg/icons.svg#icon-Group-3"
                                 ></use>
                             </svg>
-                            <h3 class="header-primary">LOREM IPSUM</h3>
+                            <h3 class="assets__header">LOREM IPSUM</h3>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Nam vel arcu sem. Sed non sodales dui.
                             Interdum et malesuada
                         </li>
-                        <li class="item">
+                        <li class="assets__item">
                             <svg class="list-icon" width="270" height="120">
                                 <use
                                     href="./images/icons.svg/icons.svg#icon-Group-4"
                                 ></use>
                             </svg>
-                            <h3 class="header-primary">LOREM IPSUM</h3>
+                            <h3 class="assets__header">LOREM IPSUM</h3>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Nam vel arcu sem. Sed non sodales dui.
                             Interdum et malesuada
                         </li>
                     </ul>
+                    <!--Actions-->
+                    <div class="container actions">
+                        <h2 class="actions__header">Czym się zajmujemy</h2>
 
-                    <div class="container">
-                        <div class="section-main1">
-                            <h2 class="header-secondary">Czym się zajmujemy</h2>
-
-                            <ul class="list-images">
-                                <li class="images">
-                                    <div class="label-container">
-                                        <img
-                                            src="images/jpeg1.jpg"
-                                            alt="osoba pisze na klawiaturze"
-                                            width="370"
-                                            height="294"
-                                            class="photos"
-                                        />
-                                        <div class="overlay">
-                                            APLIKACJE KOMPUTEROWE
-                                        </div>
+                        <ul class="actions__list">
+                            <li class="actions__images">
+                                <div class="actions__box">
+                                    <img
+                                        src="images/jpeg1.jpg"
+                                        alt="osoba pisze na klawiaturze"
+                                        width="370"
+                                        height="294"
+                                        class="actions__photos"
+                                    />
+                                    <div class="actions__overlay">
+                                        APLIKACJE KOMPUTEROWE
                                     </div>
-                                </li>
-                                <li class="images">
-                                    <div class="label-container">
-                                        <img
-                                            src="images/jpeg2.jpg"
-                                            alt="osoba przy komputerze trzyma telefon"
-                                            width="370"
-                                            height="294"
-                                            class="photos"
-                                        />
-                                        <div class="overlay">
-                                            APLIKACJE MOBILNE
-                                        </div>
+                                </div>
+                            </li>
+                            <li class="actions__images">
+                                <div class="actions__box">
+                                    <img
+                                        src="images/jpeg2.jpg"
+                                        alt="osoba przy komputerze trzyma telefon"
+                                        width="370"
+                                        height="294"
+                                        class="actions__photos"
+                                    />
+                                    <div class="actions__overlay">
+                                        APLIKACJE MOBILNE
                                     </div>
-                                </li>
-                                <li class="images">
-                                    <div class="label-container">
-                                        <img
-                                            src="images/jpeg3.jpg"
-                                            alt="osoba trzyma tablet"
-                                            width="370"
-                                            height="294"
-                                            class="photos"
-                                        />
-                                        <div class="overlay">
-                                            ROZWIĄZANIA GRAFICZNE
-                                        </div>
+                                </div>
+                            </li>
+                            <li class="actions__images">
+                                <div class="actions__box">
+                                    <img
+                                        src="images/jpeg3.jpg"
+                                        alt="osoba trzyma tablet"
+                                        width="370"
+                                        height="294"
+                                        class="actions__photos"
+                                    />
+                                    <div class="actions__overlay">
+                                        ROZWIĄZANIA GRAFICZNE
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
                     <div class="container">
