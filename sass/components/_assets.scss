@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
 
     &__list {
         font-family: "Roboto";
@@ -33,8 +32,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 215px;
-    margin-right: auto;
 }
 .assets__list > .assets__item:not(:last-child) {
     margin-right: 30px;
