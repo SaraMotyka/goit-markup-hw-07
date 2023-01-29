@@ -93,104 +93,6 @@
                     <button data-modal-open class="main__button" type="button">
                         Zamów usługę
                     </button>
-                    <div class="backdrop is__hidden" data-modal>
-                        <div class="modal__window">
-                            <!--Form-->
-                            <h2 class="form__header">
-                                Zostaw swoje dane w formularzu poniżej
-                            </h2>
-                            <form class="form">
-                                <label class="form__label"
-                                    ><p class="form__data">Imię</p>
-                                    <div class="form__container">
-                                        <svg class="form__icon">
-                                            <use
-                                                href="./images/icons.svg/icons1.svg#icon-person-black-18dp-1"
-                                            ></use>
-                                        </svg>
-                                        <input
-                                            type="text"
-                                            name="userName"
-                                            class="form__input"
-                                        />
-                                    </div>
-                                </label>
-                                <label class="form__label"
-                                    ><p class="form__data">Telefon</p>
-                                    <div class="form__container">
-                                        <svg class="form__icon">
-                                            <use
-                                                href="./images/icons.svg/icons1.svg#icon-phone-black-18dp-1"
-                                            ></use>
-                                        </svg>
-                                        <input
-                                            type="tel"
-                                            name="userTel"
-                                            class="form__input"
-                                        /></div
-                                ></label>
-                                <label class="form__label"
-                                    ><p class="form__data">Email</p>
-                                    <div class="form__container">
-                                        <svg class="form__icon">
-                                            <use
-                                                href="./images/icons.svg/icons1.svg#icon-email-black-18dp-1"
-                                            ></use>
-                                        </svg>
-                                        <input
-                                            type="email"
-                                            name="userEmail"
-                                            class="form__input"
-                                        /></div
-                                ></label>
-                                <label class="form__label"
-                                    ><p class="form__data">Komentarz</p>
-                                    <div class="form__container">
-                                        <textarea
-                                            rows="8"
-                                            name="comment"
-                                            class="form__input2 message"
-                                            placeholder="Wprowadź tekst"
-                                        ></textarea>
-                                    </div>
-                                </label>
-
-                                <div class="checkbox">
-                                    <input
-                                        class="checkbox__input"
-                                        id="statute-accept"
-                                        type="checkbox"
-                                        name="statuteCheckbox"
-                                        value="statute"
-                                    />
-                                    <label
-                                        for="statute-accept"
-                                        class="checkbox__label"
-                                    >
-                                        Oświadczam iż akceptuję
-                                        <a href="" class="checkbox__statute"
-                                            >Regulamin</a
-                                        >
-                                        i
-                                        <a href="" class="checkbox__statute"
-                                            >Politykę Prywatności.</a
-                                        >
-                                    </label>
-                                </div>
-                                <button type="submit" class="form__btn">
-                                    <span class="form__btn-text">Wyślij</span>
-                                </button>
-                            </form>
-
-                            <button
-                                type="button"
-                                class="modal__btn-close"
-                                data-modal-close
-                            >
-                                <div class="button__close-X">x</div>
-                            </button>
-                        </div>
-                    </div>
                 </div>
                 <!--Assets -->
                 <div class="assets">
@@ -849,7 +751,95 @@
                 </form>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal__window">
+                <!--Form-->
+                <h2 class="form__header">
+                    Zostaw swoje dane w formularzu poniżej
+                </h2>
+                <form class="form">
+                    <label class="form__label"
+                        ><p class="form__data">Imię</p>
+                        <div class="form__container">
+                            <svg class="form__icon">
+                                <use
+                                    href="./images/icons.svg/icons1.svg#icon-person-black-18dp-1"
+                                ></use>
+                            </svg>
+                            <input
+                                type="text"
+                                name="userName"
+                                class="form__input"
+                            />
+                        </div>
+                    </label>
+                    <label class="form__label"
+                        ><p class="form__data">Telefon</p>
+                        <div class="form__container">
+                            <svg class="form__icon">
+                                <use
+                                    href="./images/icons.svg/icons1.svg#icon-phone-black-18dp-1"
+                                ></use>
+                            </svg>
+                            <input
+                                type="tel"
+                                name="userTel"
+                                class="form__input"
+                            /></div
+                    ></label>
+                    <label class="form__label"
+                        ><p class="form__data">Email</p>
+                        <div class="form__container">
+                            <svg class="form__icon">
+                                <use
+                                    href="./images/icons.svg/icons1.svg#icon-email-black-18dp-1"
+                                ></use>
+                            </svg>
+                            <input
+                                type="email"
+                                name="userEmail"
+                                class="form__input"
+                            /></div
+                    ></label>
+                    <label class="form__label"
+                        ><p class="form__data">Komentarz</p>
+                        <div class="form__container">
+                            <textarea
+                                rows="8"
+                                name="comment"
+                                class="form__input2 message"
+                                placeholder="Wprowadź tekst"
+                            ></textarea>
+                        </div>
+                    </label>
 
+                    <div class="checkbox">
+                        <input
+                            class="checkbox__input"
+                            id="statute-accept"
+                            type="checkbox"
+                            name="statuteCheckbox"
+                            value="statute"
+                        />
+                        <label for="statute-accept" class="checkbox__label">
+                            Oświadczam iż akceptuję
+                            <a href="" class="checkbox__statute">Regulamin</a>
+                            i
+                            <a href="" class="checkbox__statute"
+                                >Politykę Prywatności.</a
+                            >
+                        </label>
+                    </div>
+                    <button type="submit" class="form__btn">
+                        <span class="form__btn-text">Wyślij</span>
+                    </button>
+                </form>
+
+                <button type="button" class="modal__btn-close" data-modal-close>
+                    <div class="button__close-X">x</div>
+                </button>
+            </div>
+        </div>
         <script src="./js/modal.js"></script>
     </body>
 </html>

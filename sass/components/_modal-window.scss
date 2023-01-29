@@ -39,14 +39,14 @@
     animation-direction: normal;
     animation-fill-mode: forwards;
 }
-.is__hidden {
+.is-hidden {
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
 }
 .modal__window {
     width: 528px;
-    height: 581px;
+    max-height: 581px;
     margin-top: 400px;
     margin-left: 810px;
     background: $white-color;
@@ -61,6 +61,7 @@
     opacity: 1;
     visibility: visible;
     display: block;
+    position: absolute;
 }
 .is__hidden .modal__window {
     transform: translate(-50%, -50%) scale(1.2);
