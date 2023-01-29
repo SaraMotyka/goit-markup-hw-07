@@ -1,7 +1,11 @@
 .actions {
     display: flex;
     flex-direction: column;
-    margin-left: 215px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 400px;
+    margin-bottom: 94px;
 
     &__header {
         font-family: "Roboto";
@@ -15,7 +19,8 @@
         height: 42px;
         margin-top: 94px;
         margin-bottom: 50px;
-        margin-left: 200px;
+        display: flex;
+        flex-direction: row;
     }
     &__list {
         width: 1170px;
@@ -26,7 +31,6 @@
         padding: 0;
         width: 370px;
         height: 294px;
-        margin-left: 185px;
     }
     &__box {
         position: relative;
@@ -43,7 +47,7 @@
         width: 100%;
         height: 70px;
         background: rgba(47, 48, 58, 0.8);
-        color: var(--fourth-color);
+        color: $white-color;
         font-size: 14px;
         font-family: "Roboto";
         line-height: 1.14;
