@@ -1,15 +1,17 @@
 .team {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     background-color: $creamy-color;
     padding: 0;
-    width: 1200px;
+    width: 1600px;
     height: 708px;
+    margin-left: 0;
 
     &__header {
         width: 209px;
         height: 42px;
-        margin-left: 500px;
+        margin-left: 690px;
         margin-top: 94px;
         margin-bottom: 50px;
         font-family: "Roboto";
@@ -17,7 +19,6 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16em;
-        text-align: center;
         letter-spacing: 0.03em;
         white-space: nowrap;
     }

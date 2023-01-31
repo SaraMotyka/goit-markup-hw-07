@@ -37,7 +37,7 @@
         position: absolute;
         top: 77px;
     }
-    &__active-second:after {
+    &__active--second:after {
         content: "";
         background-color: $brand-color;
         border-radius: 2px;
